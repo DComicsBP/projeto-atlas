@@ -1,0 +1,17 @@
+#div02{
+    font-family: 'Arial'; 
+    font-size: 14px; 
+    color: gray; 
+    position: relative; 
+    top: 100px;
+    left: 300px; 
+    width: 500px;
+    text-align: justify; 
+    
+}
+fieldset{
+
+    width: 500px; 
+    
+}
+

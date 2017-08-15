@@ -1,0 +1,52 @@
+<div id="div01">
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+        <a class="navbar-brand" routerLink="" id="a01">Atlas Ambiental</a>
+     
+    </div>
+    <div class="collapse navbar-collapse" id="navbar">
+      <ul class="nav navbar-nav">
+        <li><a routerLink="metodologia">Metodologia</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Mapas Temáticos<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a routerLink="demografia">Demografia</a></li>
+            <li><a routerLink="administrativo">Administrativos</a></li>
+            <li><a routerLink="violencia">Violência</a></li>
+            <li><a routerLink="mortalidade">Mortalidade</a></li>
+            <li><a routerLink="sambiental">Saúde Ambiental</a></li>
+
+          </ul>
+        </li>
+
+         <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Material de Apoio<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Textos de Apoio</a></li>
+            <li><a href="#">Numeros Temáticos</a></li>
+            <li><a href="#">Notas Infromativas</a></li>
+          </ul>
+        </li>
+        <li><a routerLink="equipe">Equipe</a></li>
+        
+      </ul>
+     
+
+    </div>
+     
+  </div>
+</nav>
+</div>
+
+<div id="div02">
+    <router-outlet></router-outlet>
+</div>
+<div>
+  
+</div>

@@ -3,19 +3,16 @@ import { NgModule } from '@angular/core';
 import { Routes } from '@angular/router';
 import { AppComponent } from "./app.component";
 
+//import dos componentes das rotas principais
 import { EquipeComponent } from "./equipe/equipe.component";
 import { ProjetoComponent } from "./projeto/projeto.component";
 import { MetodologiaComponent } from "./metodologia/metodologia.component";
 import { MaterialApoioComponent } from "./material-apoio/material-apoio.component";
 
+//rotas e modulos
 import { routing } from "./app.routing";
+import { MapasModule } from "./mapas/mapas.module";
 
-// componentes dos mapas
-import { DemografiaComponent } from "./demografia/demografia.component";
-import { AdministrativosComponent } from "./administrativos/administrativos.component";
-import { MortalidadeComponent } from "./mortalidade/mortalidade.component";
-import { SambientalComponent } from "./sambiental/sambiental.component";
-import { ViolenciaComponent } from "./violencia/violencia.component";
 
 
 @NgModule({
@@ -26,17 +23,15 @@ import { ViolenciaComponent } from "./violencia/violencia.component";
     ProjetoComponent,
     MetodologiaComponent,
     MaterialApoioComponent,
-    DemografiaComponent,
-    AdministrativosComponent,
-    MortalidadeComponent, 
-    SambientalComponent,
-    ViolenciaComponent
+  
+    
         
   ],
   imports: [
     
     BrowserModule,
     routing,
+    MapasModule
     
   ],
   providers: [],

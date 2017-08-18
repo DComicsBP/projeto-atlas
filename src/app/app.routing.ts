@@ -12,6 +12,7 @@ import { MetodologiaComponent } from "./metodologia/metodologia.component";
 import { ModuleWithProviders } from "@angular/core/core";
 
 const appRouters: Routes = [
+    { path: 'mapas', loadChildren : 'app/mapas/mapas.module#MapasModule' },
     { path: '', component: ProjetoComponent }, 
     { path: 'material', component: MaterialApoioComponent },
     { path: 'equipe', component: EquipeComponent },

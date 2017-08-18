@@ -1,0 +1,10 @@
+#div-posicao{
+    
+position: relative; 
+top: 100px;
+left: 300px; 
+width: 700px;
+text-align: justify; 
+font-size: 18px; 
+}
+

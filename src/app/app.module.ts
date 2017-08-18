@@ -11,7 +11,6 @@ import { MaterialApoioComponent } from "./material-apoio/material-apoio.componen
 
 //rotas e modulos
 import { routing } from "./app.routing";
-import { MapasModule } from "./mapas/mapas.module";
 
 
 
@@ -31,7 +30,7 @@ import { MapasModule } from "./mapas/mapas.module";
     
     BrowserModule,
     routing,
-    MapasModule
+    
     
   ],
   providers: [],

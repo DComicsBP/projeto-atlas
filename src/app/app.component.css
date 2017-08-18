@@ -1,12 +1,7 @@
 #div02{
-    font-family: Helvetica, sans-serif; 
-    font-size: 14px; 
+    font-family: Helvetica; 
+   
     color: gray; 
-    position: relative; 
-    top: 100px;
-    left: 300px; 
-    width: 500px;
-    text-align: justify; 
     
 }
 fieldset{
@@ -14,4 +9,3 @@ fieldset{
     width: 500px; 
     
 }
-

@@ -1,7 +1,5 @@
-*{
-    margin:0px;
-    padding:0px;
-    border:0px;
+#menu-posicao{
+    top: 0px; 
 }
 ul{
     margin: 20px 0 0 20px;
@@ -10,23 +8,30 @@ ul{
 a{
     position: relative; /* Para que a imagem não saia fora do link */
     display:block;
-    width:100px;
+    width:200px;
     padding:5px 0;
-    border:1px #999999 solid;
-    background-color:#CCCCCC;
+    background-color: white;
     text-decoration:none;
-    color:#FFFFFF;
+    color:grey;
+    text-align: justify;
+
+
 }
 a:hover{
-    background-color:#999999;
+    color: black;
 }
 a span{
-    display:none; /* Aqui você define que todo SPAN que estiver dentro de um A estará invisível */
+    display:none; /* Aqui vai ser definido que todo SPAN que estiver dentro de um A estará invisível */
 }
 a:hover span{
     display:block; 
     position:absolute; 
     top: 0px; 
     left: 100%; 
-    border:1px #CCCCCC solid; /* Estilo extra, lembrando que você pode colocar qualquer estilo nesse elemento */
+    border:1px #CCCCCC solid; /* Estilo extra, lembrando que se pode colocar qualquer estilo nesse elemento */
+}
+
+img{
+    width: 800px;
+    height: 600px
 }

@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./material-apoio.component.css']
 })
 export class MaterialApoioComponent implements OnInit {
-
+imagem01 = './assets/Arial-Helvetica/helvetica X Arial.png';
   constructor() { }
 
   ngOnInit() {

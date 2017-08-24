@@ -1,22 +1,23 @@
+import { Routes, RouterModule } from '@angular/router';
 
+import { ProjetoComponent } from './projeto/projeto.component';
+import { MaterialApoioComponent } from './material-apoio/material-apoio.component';
+import { EquipeComponent } from './equipe/equipe.component';
+import { MetodologiaComponent } from './metodologia/metodologia.component';
+import { BlogComponent } from './blog/blog.component';
+import { LoginComponent } from './login/login.component';
 
+import { ModuleWithProviders } from '@angular/core';
 
-
-import { Routes, RouterModule } from "@angular/router";
-
-import { ProjetoComponent } from "./projeto/projeto.component";
-import { MaterialApoioComponent } from "./material-apoio/material-apoio.component";
-import { EquipeComponent } from "./equipe/equipe.component";
-import { MetodologiaComponent } from "./metodologia/metodologia.component";
-
-import { ModuleWithProviders } from "@angular/core/core";
 
 const appRouters: Routes = [
     { path: 'mapas', loadChildren : 'app/mapas/mapas.module#MapasModule' },
-    { path: '', component: ProjetoComponent }, 
+    { path: '', component: ProjetoComponent },
     { path: 'material', component: MaterialApoioComponent },
     { path: 'equipe', component: EquipeComponent },
-    { path: 'metodologia', component: MetodologiaComponent }
+    { path: 'metodologia', component: MetodologiaComponent },
+    { path: 'blog', component: BlogComponent },
+    { path: 'login', component: LoginComponent }
 
 ];
     export const routing: ModuleWithProviders = RouterModule.forRoot(appRouters);

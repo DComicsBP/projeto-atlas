@@ -1,37 +1,37 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { Routes } from '@angular/router';
-import { AppComponent } from "./app.component";
+import { AppComponent } from './app.component';
 
-//import dos componentes das rotas principais
-import { EquipeComponent } from "./equipe/equipe.component";
-import { ProjetoComponent } from "./projeto/projeto.component";
-import { MetodologiaComponent } from "./metodologia/metodologia.component";
-import { MaterialApoioComponent } from "./material-apoio/material-apoio.component";
+// import dos componentes das rotas principais
+import { EquipeComponent } from './equipe/equipe.component';
+import { ProjetoComponent } from './projeto/projeto.component';
+import { MetodologiaComponent } from './metodologia/metodologia.component';
+import { MaterialApoioComponent } from './material-apoio/material-apoio.component';
+import { LoginComponent } from './login/login.component';
+import { BlogComponent } from './blog/blog.component';
 
-//rotas e modulos
-import { routing } from "./app.routing";
+
+// rotas e modulos
+import { routing } from './app.routing';
 
 
 
 @NgModule({
   declarations: [
-    
+
     AppComponent,
-    EquipeComponent, 
+    EquipeComponent,
     ProjetoComponent,
     MetodologiaComponent,
     MaterialApoioComponent,
-  
-    
-        
+    LoginComponent,
+    BlogComponent
   ],
   imports: [
-    
+
     BrowserModule,
-    routing,
-    
-    
+    routing
   ],
   providers: [],
   bootstrap: [AppComponent]

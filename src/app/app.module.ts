@@ -8,7 +8,6 @@ import { EquipeComponent } from './equipe/equipe.component';
 import { ProjetoComponent } from './projeto/projeto.component';
 import { MetodologiaComponent } from './metodologia/metodologia.component';
 import { MaterialApoioComponent } from './material-apoio/material-apoio.component';
-import { LoginComponent } from './login/login.component';
 import { BlogComponent } from './blog/blog.component';
 
 
@@ -25,8 +24,8 @@ import { routing } from './app.routing';
     ProjetoComponent,
     MetodologiaComponent,
     MaterialApoioComponent,
-    LoginComponent,
-    BlogComponent
+    BlogComponent,
+   
   ],
   imports: [
 

@@ -9,10 +9,13 @@ import { ProjetoComponent } from './projeto/projeto.component';
 import { MetodologiaComponent } from './metodologia/metodologia.component';
 import { MaterialApoioComponent } from './material-apoio/material-apoio.component';
 import { BlogComponent } from './blog/blog.component';
+import { LoginComponent } from "./login/login.component";
 
 
-// rotas e modulos
+// rotas, servicos e modulos
 import { routing } from './app.routing';
+
+
 
 
 
@@ -25,6 +28,7 @@ import { routing } from './app.routing';
     MetodologiaComponent,
     MaterialApoioComponent,
     BlogComponent,
+    LoginComponent
     
   ],
   imports: [
@@ -32,7 +36,10 @@ import { routing } from './app.routing';
     BrowserModule,
     routing
   ],
-  providers: [],
+  providers: [
+    
+  ],
   bootstrap: [AppComponent]
+  
 })
 export class AppModule { }

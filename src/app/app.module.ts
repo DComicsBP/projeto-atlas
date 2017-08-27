@@ -25,7 +25,7 @@ import { routing } from './app.routing';
     MetodologiaComponent,
     MaterialApoioComponent,
     BlogComponent,
-   
+    
   ],
   imports: [
 

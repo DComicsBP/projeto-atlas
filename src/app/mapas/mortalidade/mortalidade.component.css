@@ -10,8 +10,7 @@ a{
     background-color: white;
     text-decoration:none;
     color:grey;
-    text-align: left;
-
+    text-align: justify; 
 
 
 
@@ -32,5 +31,6 @@ a:hover span{
 
 img{
     width: 800px;
-    height: 600px
+    height: 600px;
+    
 }

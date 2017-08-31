@@ -1,10 +1,12 @@
 import { NgModule } from '@angular/core';
 import { RouterModule } from "@angular/router";
+
 import { AdministrativosComponent } from "./administrativos/administrativos.component";
 import { DemografiaComponent } from "./demografia/demografia.component";
 import { MortalidadeComponent } from "./mortalidade/mortalidade.component";
 import { SambientalComponent } from "./sambiental/sambiental.component";
 import { ViolenciaComponent } from "./violencia/violencia.component";
+
 import { MapasComponent } from "./mapas.component";
 
 const mapasRoutes=[

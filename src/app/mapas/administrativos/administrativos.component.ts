@@ -7,8 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AdministrativosComponent implements OnInit {
 
-  imagem01 = 'https://4.bp.blogspot.com/--XtFGLaE0qQ/WZMhsoAlNpI/AAAAAAAAADA/bVVXP_q5FqQJoJvpN2KtCt0Y8rpJ5s0gQCLcBGAs/s800/cordenadorias-de-saude-1.jpg';
-  imagem02 = 'https://2.bp.blogspot.com/-S5fFekgIdDs/WZMhs6DPeYI/AAAAAAAAADE/K7YnzOwWPJYrbR8tOV58sC_wgkb37pQ5wCLcBGAs/s800/regioes-saude-1.jpg';
+  imagem01 = './assets/Mapas/Administrativos/cordenadorias-de-saude-1.jpg';
+  imagem02 = './assets/Mapas/Administrativos/regioes-saude-1.jpg';
+  
   
   
   constructor() {  }

@@ -1,0 +1,36 @@
+ul{
+    margin: 20px 0 0 20px;
+    list-style:none;
+}
+a{
+    position: relative; /* Para que a imagem não saia fora do link */
+    display:block;
+    width:200px;
+    padding:5px 0;
+    background-color: white;
+    text-decoration:none;
+    color:grey;
+    text-align: justify; 
+
+
+
+}
+a:hover{
+    color: black;
+}
+a span{
+    display:none; /* Aqui vai ser definido que todo SPAN que estiver dentro de um A estará invisível */
+}
+a:hover span{
+    display:block; 
+    position:absolute; 
+    top: 0px; 
+    left: 100%; 
+    border:1px #CCCCCC solid; /* Estilo extra, lembrando que se pode colocar qualquer estilo nesse elemento */
+}
+
+img{
+    width: 800px;
+    height: 600px;
+    
+}

@@ -1,57 +1,61 @@
-<div id="div01">
-<nav class="navbar navbar-inverse">
-  <div class="container-fluid" >
-    <div class="navbar-header" >
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar"style="position:static; left:1000px">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-    </div>
-        <a class="navbar-brand" routerLink="" id="a01" style="font-size:40px">Atlas Ambiental</a>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark" >
+  <a class="navbar-brand" routerLink="">Atlas Ambiental</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a  class="nav-link" routerLink="metodologia">Metodologia</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Mapas Temáticos
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+
+          <li><a routerLink="mapas/demografia" class="dropdown-item">Demografia</a></li>
+          <li><a routerLink="mapas/administrativos" class="dropdown-item">Administrativos</a></li>
+          <li><a routerLink="mapas/violencia" class="dropdown-item">Violência</a></li>
+          <li><a routerLink="mapas/mortalidade" class="dropdown-item">Mortalidade</a></li>
+          <li><a routerLink="mapas/sambiental" class="dropdown-item">Saúde Ambiental</a></li>
 
 
-    <div class="collapse navbar-collapse" id="navbar">
-      <ul class="nav navbar-nav" >
-        <li><a routerLink="metodologia" id="troca-tamanho">Metodologia</a></li>
-
-        <li class="dropdown">
-          <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="troca-tamanho">Mapas Temáticos<span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li ><a routerLink="mapas/demografia">Demografia</a></li>
-            <li><a routerLink="mapas/administrativos">Administrativos</a></li>
-            <li><a routerLink="mapas/violencia">Violência</a></li>
-            <li><a routerLink="mapas/mortalidade">Mortalidade</a></li>
-            <li><a routerLink="mapas/sambiental">Saúde Ambiental</a></li>
-
-          </ul>
-        </li>
-
-         <li class="dropdown">
-          <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="troca-tamanho">Material de Apoio<span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Textos de Apoio</a></li>
-            <li><a href="#">Numeros Temáticos</a></li>
-            <li><a href="#">Notas Infromativas</a></li>
-          </ul>
-        </li>
-        <li><a routerLink="blog" id="troca-tamanho">Blog</a></li>
-        <li><a routerLink="equipe" id="troca-tamanho">Equipe</a></li>
-        <li><a routerLink="login" id="troca-tamanho">Area Restrita</a></li>
-       
 
 
-      </ul>
+        </div>
+      </li>
 
 
-    </div>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Mapas Temáticos
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
 
+
+          <li><a href="#" class="dropdown-item">Textos de Apoio</a></li>
+          <li><a href="#" class="dropdown-item">Numeros Temáticos</a></li>
+          <li><a href="#" class="dropdown-item">Notas Infromativas</a></li>
+
+
+        </div>
+      </li>
+
+      <li class="nav-item"> <a class="nav-link" routerLink="metodologia" href="#">Equipe</a> </li>
+      <li class="nav-item"> <a class="nav-link" routerLink="blog"href="#">Blog</a>  </li>
+
+
+
+
+
+    </ul>
   </div>
 </nav>
-</div>
 
 <div id="div02">
-    <router-outlet></router-outlet>
 
-
+  <router-outlet></router-outlet>
 </div>
+

@@ -11,16 +11,13 @@ import { ModuleWithProviders } from '@angular/core';
 
 
 const appRouters: Routes = [
-    { path: 'mapas', loadChildren : 'app/mapas/mapas.module#MapasModule' }, 
+    { path: 'mapas', loadChildren : 'app/mapas/mapas.module#MapasModule' },
     { path: '', component: ProjetoComponent },
     { path: 'material', component: MaterialApoioComponent },
     { path: 'equipe', component: EquipeComponent },
     { path: 'metodologia', component: MetodologiaComponent },
     { path: 'blog', component: BlogComponent },
     { path: 'login', component: LoginComponent }
-
-    
-
 ];
     export const routing: ModuleWithProviders = RouterModule.forRoot(appRouters);
 

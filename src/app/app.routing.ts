@@ -18,7 +18,6 @@ const appRouters: Routes = [
     { path: 'metodologia', component: MetodologiaComponent },
     { path: 'blog', component: BlogComponent },
     { path: 'login', component: LoginComponent }
-
 ];
     export const routing: ModuleWithProviders = RouterModule.forRoot(appRouters);
 

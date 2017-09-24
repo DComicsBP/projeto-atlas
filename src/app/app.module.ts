@@ -9,11 +9,13 @@ import { ProjetoComponent } from './projeto/projeto.component';
 import { MetodologiaComponent } from './metodologia/metodologia.component';
 import { MaterialApoioComponent } from './material-apoio/material-apoio.component';
 import { BlogComponent } from './blog/blog.component';
-import { LoginComponent } from "./login/login.component";
+import { LoginComponent } from './login/login.component';
 
 
 // rotas, servicos e modulos
-import { routing } from './app.routing';
+
+import { AppRoutingModule } from './app.routng.module';
+import { MapasComponent } from './mapas/mapas.component';
 
 
 
@@ -21,7 +23,7 @@ import { routing } from './app.routing';
 
 @NgModule({
   declarations: [
-
+    MapasComponent,
     AppComponent,
     EquipeComponent,
     ProjetoComponent,
@@ -29,17 +31,12 @@ import { routing } from './app.routing';
     MaterialApoioComponent,
     BlogComponent,
     LoginComponent
-    
   ],
   imports: [
 
     BrowserModule,
-    routing
-  ],
-  providers: [
-    
-  ],
+    AppRoutingModule
+    ],
   bootstrap: [AppComponent]
-  
 })
 export class AppModule { }

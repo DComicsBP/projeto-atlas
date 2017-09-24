@@ -10,12 +10,12 @@ import { SambientalComponent } from './sambiental/sambiental.component';
 import { ViolenciaComponent } from './violencia/violencia.component';
 
 @NgModule({
-    imports:[
+    imports: [
         CommonModule,
         MapasRoutingModule
 
     ],
-    exports:[
+    exports: [
       MapasModule
     ],
 
@@ -32,5 +32,5 @@ import { ViolenciaComponent } from './violencia/violencia.component';
 
 })
 
-export class MapasModule{}
+export class MapasModule {}
 

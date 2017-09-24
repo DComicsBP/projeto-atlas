@@ -6,7 +6,7 @@ import { MetodologiaComponent } from './metodologia/metodologia.component';
 import { BlogComponent } from './blog/blog.component';
 import { LoginComponent } from './login/login.component';
 
-import { ModuleWithProviders } from '@angular/core';
+import { ModuleWithProviders, NgModule } from '@angular/core';
 
 
 const appRouters: Routes = [
@@ -18,5 +18,12 @@ const appRouters: Routes = [
     { path: 'blog', component: BlogComponent },
     { path: 'login', component: LoginComponent }
 ];
-    export const routing: ModuleWithProviders = RouterModule.forRoot(appRouters);
-
+    @NgModule ({
+      imports: [
+        RouterModule.forRoot(appRouters)
+     ],
+      exports: [
+        RouterModule
+      ]
+    })
+    export class AppRoutingModule { }

@@ -12,12 +12,13 @@ import { SambientalComponent } from './sambiental/sambiental.component';
 
 const mapasRoutes = [
 
-    { path: '', component: MapasComponent},
-    { path: 'demografia', component: DemografiaComponent },
-    { path: 'administrativos', component: AdministrativosComponent },
-    { path: 'violencia', component: ViolenciaComponent},
-    { path: 'mortalidade', component: MortalidadeComponent },
-    { path: 'sambiental', component: SambientalComponent }
+    { path: '', component: MapasComponent, children: [
+      { path: 'demografia', component: DemografiaComponent },
+      { path: 'administrativos', component: AdministrativosComponent },
+      { path: 'violencia', component: ViolenciaComponent},
+      { path: 'mortalidade', component: MortalidadeComponent },
+      { path: 'sambiental', component: SambientalComponent }
+    ] }
   ];
     @NgModule({
     imports: [RouterModule.forChild(mapasRoutes)],

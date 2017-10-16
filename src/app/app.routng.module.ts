@@ -7,11 +7,12 @@ import { BlogComponent } from './blog/blog.component';
 import { LoginComponent } from './login/login.component';
 
 import { ModuleWithProviders, NgModule } from '@angular/core';
+import { MapasComponent } from './mapas/mapas.component';
 
 
 const appRouters: Routes = [
-    { path: 'mapas', loadChildren : 'app/mapas/mapas.module#MapasModule' },
     { path: '', component: ProjetoComponent },
+    { path: 'mapas', component: MapasComponent  },
     { path: 'material', component: MaterialApoioComponent },
     { path: 'equipe', component: EquipeComponent },
     { path: 'metodologia', component: MetodologiaComponent },

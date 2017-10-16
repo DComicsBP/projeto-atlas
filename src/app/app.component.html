@@ -1,36 +1,40 @@
-
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark" >
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <a class="navbar-brand" routerLink="">Atlas Ambiental</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
+    aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarNavDropdown">
     <ul class="navbar-nav">
       <li class="nav-item active">
-        <a  class="nav-link" routerLink="metodologia">Metodologia</a>
+        <a class="nav-link" routerLink="metodologia">Metodologia</a>
       </li>
       <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Mapas Temáticos
+        <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+          aria-expanded="false">
+          Mapas Tematicos
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
 
-          <li><a routerLink="/mapas/demografia" class="dropdown-item">Demografia</a></li>
-          <li><a routerLink="/mapas/administrativos" class="dropdown-item">Administrativos</a></li>
-          <li><a routerLink="/mapas/violencia" class="dropdown-item">Violência</a></li>
-          <li><a routerLink="/mapas/mortalidade" class="dropdown-item">Mortalidade</a></li>
-          <li><a routerLink="/mapas/sambiental" class="dropdown-item">Saúde Ambiental</a></li>
+
+          <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">Região Metropolitana de Porto Alegre</a>
 
 
+
+
+          </li>
+          <li><a href="#" class="dropdown-item">Região Metropolitana da Serra Gaúcha</a></li>
+          <li><a href="#" class="dropdown-item">Região Metropolitana de Pelotas</a></li>
 
 
         </div>
       </li>
 
-
       <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Mapas Temáticos
+        <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+          aria-expanded="false">
+          Textos de Apoio
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
 
@@ -43,9 +47,7 @@
         </div>
       </li>
 
-      <li class="nav-item"> <a class="nav-link" routerLink="metodologia" href="#">Equipe</a> </li>
-      <li class="nav-item"> <a class="nav-link" routerLink="blog"href="#">Blog</a>  </li>
-
+      <li class="nav-item"> <a class="nav-link" routerLink="equipe" href="#">Equipe</a> </li>
 
 
 
@@ -54,8 +56,5 @@
   </div>
 </nav>
 
-<div id="div02">
-
-  <router-outlet></router-outlet>
-</div>
+<router-outlet></router-outlet>
 

@@ -4,15 +4,15 @@ import { Routes, RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
 
 // import dos componentes das rotas principais
-import { MaterialApoioComponent } from './components/material-apoio/material-apoio.component';
-import { MetodologiaComponent } from './components/metodologia/metodologia.component';
-import { ProjetoComponent } from './components/projeto/projeto.component';
-import { EquipeComponent } from './components/equipe/equipe.component';
+import { MaterialApoioComponent } from './material-apoio/material-apoio.component';
+import { MetodologiaComponent } from './metodologia/metodologia.component';
+import { ProjetoComponent } from './projeto/projeto.component';
+import { EquipeComponent } from './equipe/equipe.component';
 
 
 // rotas, servicos e modulos
 
-import { MapasComponent } from "./components/mapas/mapas.component";
+import { MapasComponent } from "./mapas/mapas.component";
 import { ModuleWithProviders } from '@angular/core';
 
 

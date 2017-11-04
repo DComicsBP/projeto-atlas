@@ -2,15 +2,13 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-mapas',
-  templateUrl: './mapas.component.html',
+  template: '<iframe width="500" height="300" scrolling="no" frameborder="no" src="https://fusiontables.google.com/embedviz?q=select+col22+from+1IcNEWGsIBhYIy1rUSAMcklXib8DD6n91NrH70gw-&amp;viz=MAP&amp;h=false&amp;lat=-30.09538886361527&amp;lng=-51.15781057739258&amp;t=1&amp;z=9&amp;l=col22&amp;y=2&amp;tmplt=2&amp;hml=KML"></iframe>',
   styleUrls: ['./mapas.component.css']
+  
 })
 export class MapasComponent implements OnInit {
 
-  // tslint:disable-next-line:one-line
-  onclick01(){
-  window.location.href = '/src/assets/Mapas/qgis2web_2017_10_08-20_06_36_732000/index.html';
-  }
+
   constructor() { }
 
   ngOnInit() {

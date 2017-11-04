@@ -16,3 +16,13 @@ html, body, #map {
 html, body {
   background-color: #ffffff;
 }
+
+#menu-lateral{
+  position: relative;
+  top:30px;
+  block-size: 100px;
+  left: 10px; 
+  width: 200px;  
+  }
+
+

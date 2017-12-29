@@ -2,16 +2,23 @@ a{
     font-weight:bold;
 }
 i{
-    font-size:20px; 
+    font-size:20px;
     font-weight:bold;
 }
- 
-#div-posicao{
-    
-position: relative; 
-top: 100px;
-left: 300px; 
-width: 700px;
-text-align: justify; 
+
+@media screen and (max-width: 300) {
+  .div-posicao {
+       width: 5%;
+       left: 0px;
+   }
+}
+
+.div-posicao{
+
+position: relative;
+top: 50px;
+left: 25%;
+width: 60%;
+text-align: justify;
 }
 

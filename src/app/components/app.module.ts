@@ -12,17 +12,23 @@ import { EquipeComponent } from './equipe/equipe.component';
 
 // rotas, servicos e modulos
 
-import { MapasComponent } from "./mapas/mapas.component";
+import { MapasComponent } from './mapas/mapas.component';
 import { ModuleWithProviders } from '@angular/core';
+import { PelotasComponent } from './pelotas/pelotas.component';
+import { PoaComponent } from './poa/poa.component';
+import { SerraaComponent } from './serraa/serraa.component';
+import { RsgComponent } from './rsg/rsg.component';
 
 
 const appRouters: Routes = [
     { path: '', component: ProjetoComponent },
-    { path: 'mapas', component: MapasComponent  },
+    { path: 'rsg', component: RsgComponent  },
+    { path: 'pelotas', component: PelotasComponent  },
+    { path: 'poa', component: PoaComponent  },
+    { path: 'serra', component: SerraaComponent  },
     { path: 'material', component: MaterialApoioComponent },
     { path: 'equipe', component: EquipeComponent },
     { path: 'metodologia', component: MetodologiaComponent }
-  
 ];
 
 
@@ -34,13 +40,18 @@ const appRouters: Routes = [
     EquipeComponent,
     ProjetoComponent,
     MetodologiaComponent,
-    MaterialApoioComponent
+    MaterialApoioComponent,
+    PelotasComponent,
+    PoaComponent,
+    SerraaComponent,
+    RsgComponent
+
       ],
   imports: [
     RouterModule.forRoot(appRouters),
 
     BrowserModule
-  
+
     ],
     exports: [
       RouterModule

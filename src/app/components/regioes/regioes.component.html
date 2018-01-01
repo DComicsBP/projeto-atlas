@@ -1,0 +1,26 @@
+<div class="menu-lateral" *ngIf="regiao">
+  <div class="container-options">
+    <div class="container-fluid">
+      <div class="col-sm-3">
+
+        <div class="list-group">
+          <a *ngFor="let map of regiao.maps; let i = index" routerLink="['mapas'], id" class="list-group-item " (click)="showMap(i)">
+            <h5 class="list-group-item-heading">List {{ i }}</h5>
+          </a>
+        </div>
+
+        <div *ngIf="showConteudo" class="box-conteudo">
+
+          <div class="titulo">
+            <h3>{{ regiao.regiao }}</h3>
+          </div>
+          <div class="box-texto">
+            <p>
+              {{ regiao.desc }}
+            </p>
+          </div>
+        </div>
+
+        <div *ngIf="!showConteudo" class="box-conteudo">
+          <span>{{ teste }}</span>
+        </div>

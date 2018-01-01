@@ -1,0 +1,23 @@
+.box-conteudo{
+  position: fixed;
+  top: 30%;
+  left: 40%;
+  width: 50%;
+  text-align: justify;
+}
+.menu-lateral{
+  position: absolute;
+  top: 15%;
+  left: 5%;
+  width: 100%;
+  text-align: justify;
+}
+
+.titulo{
+  position: absolute;
+}
+.box-texto{
+  position: relative;
+  top: 70px;
+}
+

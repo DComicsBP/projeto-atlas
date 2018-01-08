@@ -1,4 +1,3 @@
-import { MapasService } from './mapas/mapas.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
@@ -13,7 +12,6 @@ import { EquipeComponent } from './equipe/equipe.component';
 
 // rotas, servicos e modulos
 
-import { MapasComponent } from './mapas/mapas.component';
 import { ModuleWithProviders } from '@angular/core';
 import { RegioesComponent, SafePipe } from './regioes/regioes.component';
 
@@ -23,7 +21,6 @@ const appRouters: Routes = [
     { path: 'material', component: MaterialApoioComponent },
     { path: 'equipe', component: EquipeComponent },
     { path: 'metodologia', component: MetodologiaComponent },
-    { path: 'mapas', component: MapasComponent },
     { path: 'regioes/:id', component: RegioesComponent }
 ];
 
@@ -31,7 +28,7 @@ const appRouters: Routes = [
 
 @NgModule({
   declarations: [
-    MapasComponent,
+
     AppComponent,
     EquipeComponent,
     ProjetoComponent,
@@ -48,7 +45,7 @@ const appRouters: Routes = [
     exports: [
       RouterModule
     ],
-    providers: [MapasService],
+    providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -2,7 +2,6 @@
 import { Component, OnInit } from '@angular/core';
 import { RegioesService } from './regioes.service';
 import { ActivatedRoute } from '@angular/router';
-import { MapasService } from '../mapas/mapas.service';
 const mapUrl = null;
 
 @Component({
@@ -24,7 +23,7 @@ export class RegioesComponent implements OnInit {
 
   constructor(private _RegioesService: RegioesService,
               private _activatedRoute: ActivatedRoute,
-              private _MapasService: MapasService) {}
+             ) {}
 
   ngOnInit() {
     console.log(this._activatedRoute);
@@ -43,9 +42,7 @@ export class RegioesComponent implements OnInit {
     this.mapUrl = link;
     // mapa = this._url;
     console.log(this.mapUrl);
-    this._MapasService.setMapa(this.teste);
-
-  }
+    }
 
   private _get(routerId) {
     this.regiao =  this._RegioesService.getRegiao(routerId);

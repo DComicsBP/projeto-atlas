@@ -1,10 +1,11 @@
+
 <div class="menu-lateral" *ngIf="regiao">
   <div class="container-options">
     <div class="container-fluid">
-      <div class="col-sm-3">
+      <div class="col-3">
 
         <div class="list-group">
-          <a *ngFor="let map of regiao.maps; let i = index" routerLink="['mapas'], id" class="list-group-item " (click)="showMap(i)">
+          <a *ngFor="let map of regiao.maps; let i = index" routerLink="['mapas'], id" class="list-group-item " (click)="showMap(map)">
             <h5 class="list-group-item-heading">List {{ i }}</h5>
           </a>
         </div>
@@ -21,6 +22,14 @@
           </div>
         </div>
 
-        <div *ngIf="!showConteudo" class="box-conteudo">
-          <span>{{ teste }}</span>
+        <div *ngIf="!showConteudo" class="box-conteudo map-frame">
+
+
+          <iframe class="col" width="700" height="500" scrolling="no" frameborder="no" [src]=" this.mapUrl | safe"></iframe>
+         <div id="button">
+            <button type="button" class="btn btn-link">Voltar</button>
+         </div>
+
+
+
         </div>

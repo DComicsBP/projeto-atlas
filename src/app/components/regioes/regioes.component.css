@@ -21,3 +21,13 @@
   top: 70px;
 }
 
+.map-frame {
+  position: absolute;
+  top: 0; 
+  left: 100%;
+  width: 700px;
+  height: 500px;
+  max-width: 700px;
+  max-height: 500px;
+
+}

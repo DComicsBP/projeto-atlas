@@ -1,3 +1,4 @@
+import { MapasService } from './mapas/mapas.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
@@ -14,7 +15,7 @@ import { EquipeComponent } from './equipe/equipe.component';
 
 import { MapasComponent } from './mapas/mapas.component';
 import { ModuleWithProviders } from '@angular/core';
-import { RegioesComponent } from './regioes/regioes.component';
+import { RegioesComponent, SafePipe } from './regioes/regioes.component';
 
 const appRouters: Routes = [
     { path: '', component: ProjetoComponent },
@@ -36,17 +37,18 @@ const appRouters: Routes = [
     ProjetoComponent,
     MetodologiaComponent,
     MaterialApoioComponent,
-    RegioesComponent
+    RegioesComponent,
+    SafePipe
   ],
   imports: [
     RouterModule.forRoot(appRouters),
-
-    BrowserModule
+     BrowserModule
 
     ],
     exports: [
       RouterModule
     ],
+    providers: [MapasService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

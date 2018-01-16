@@ -13,11 +13,11 @@ const mapUrl = null;
 })
 export class RegioesComponent implements OnInit {
   showConteudo = true;
-
   regiao = null;
   mapUrl = null;
+  titulo = null;
+  legenda = null;
   // tslint:disable-next-line:max-line-length
-  teste = `<div style="position: absolute;top:100px;left :  250px;"><iframe width="900" height="550" scrolling="no" frameborder="no" src="http://fusiontables.google.com/embedviz?q=select+col22+from+1IcNEWGsIBhYIy1rUSAMcklXib8DD6n91NrH70gw-&amp;viz=MAP&amp;h=false&amp;lat=-30.09538886361527&amp;lng=-51.15781057739258&amp;t=1&amp;z=9&amp;l=col22&amp;y=2&amp;tmplt=2&amp;hml=KML" ></iframe></div>`;
 
   private _url = 'http://fusiontables.google.com/';
 
@@ -36,9 +36,12 @@ export class RegioesComponent implements OnInit {
 
   }
 
-  showMap(link) {
+  
+  showMap(link, titulo, legenda) {
     this.showConteudo = false;
     // this.mapUrl = this._url + link;
+    this.legenda = legenda;
+    this.titulo = titulo;
     this.mapUrl = link;
     // mapa = this._url;
     console.log(this.mapUrl);

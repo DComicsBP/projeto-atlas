@@ -5,8 +5,8 @@
       <div class="col-3">
 
         <div class="list-group">
-          <a *ngFor="let map of regiao.maps; let i = index" routerLink="['mapas'], id" class="list-group-item " (click)="showMap(map)">
-            <h5 class="list-group-item-heading">List {{ i }}</h5>
+          <a *ngFor="let map of regiao.maps; let i = index" routerLink="['mapas'], id" class="list-group-item " (click)="showMap(map.link, map.titulo, map.legenda)">
+            <h5 class="list-group-item-heading">{{ map.nome }}</h5>
           </a>
         </div>
 
@@ -22,14 +22,12 @@
           </div>
         </div>
 
+       {{legenda}}
+
         <div *ngIf="!showConteudo" class="box-conteudo map-frame">
-
-
+            <h1>   {{ titulo }} </h1>
           <iframe class="col" width="700" height="500" scrolling="no" frameborder="no" [src]=" this.mapUrl | safe"></iframe>
-         <div id="button">
-            <button type="button" class="btn btn-link">Voltar</button>
-         </div>
-
+        <button value="Voltar"></button>
 
 
         </div>

@@ -31,3 +31,7 @@
   max-height: 500px;
 
 }
+.box-titulo{
+  position: relative;
+  top: 70px;
+}

@@ -114,16 +114,15 @@ export class RegioesService {
       passar dos dias.`,
       maps: [
         {
-          titulo:'Titulo 01',
-          nome:'Mapa 01',
-          link:'https://fusiontables.google.com/embedviz?q=select+col22+from+1IcoXZ7XHA4uhvqXAP9n3fjjsN6eJ1uWfOIH3Xgc3&viz=MAP&h=false&lat=-30.191385705216614&lng=-50.62162998193355&t=1&z=8&l=col22&y=2&tmplt=2&hml=KML'
+          titulo:'Taxa de Óbitos Infantis - RS',
+          nome:'Taxa de Óbitos Infantis - RS ',
+          link:'https://fusiontables.google.com/embedviz?q=select+col26+from+1ZAxGejRZuKEiVSf5McmWMdPtlqceQmNGIviUHDHb&viz=MAP&h=false&lat=-30.39595413228537&lng=-52.99139537500001&t=1&z=6&l=col26&y=2&tmplt=3&hml=KML'
         },
         {
-          titulo:'Titulo 02',
-          nome:'Mapa 02',
-          link:'https://fusiontables.google.com/embedviz?q=select+col22+from+1IcoXZ7XHA4uhvqXAP9n3fjjsN6eJ1uWfOIH3Xgc3&viz=MAP&h=false&lat=-30.191385705216614&lng=-50.62162998193355&t=1&z=8&l=col22&y=2&tmplt=2&hml=KML'
-        },
-        {
+          titulo:'Taxa de Óbitos Infantis - Indígena',
+          nome:'Taxa de Óbitos Infantis - Indígena',
+          link:'https://fusiontables.google.com/embedviz?q=select+col26+from+1ZAxGejRZuKEiVSf5McmWMdPtlqceQmNGIviUHDHb&viz=MAP&h=false&lat=-29.901462995701408&lng=-53.211121937500025&t=1&z=6&l=col26&y=3&tmplt=4&hml=KML'
+        },        {
           titulo:'Titulo 03',
           nome:'Mapa 02',
           link:'https://fusiontables.google.com/embedviz?q=select+col22+from+1IcoXZ7XHA4uhvqXAP9n3fjjsN6eJ1uWfOIH3Xgc3&viz=MAP&h=false&lat=-30.191385705216614&lng=-50.62162998193355&t=1&z=8&l=col22&y=2&tmplt=2&hml=KML'
@@ -167,14 +166,11 @@ export class RegioesService {
 
   constructor() {}
 
-  getRegioes() {
-    return this._regioes;
-  }
-
+  getRegioes() { return this._regioes; }
 
   getRegiao(regiaoId) {
     return this._regioes.find(regiao => regiaoId === regiao.id );
+    }
+
   }
 
-
-}

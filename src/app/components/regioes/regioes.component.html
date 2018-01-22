@@ -22,10 +22,11 @@
           </div>
         </div>
 
+        
        {{legenda}}
 
         <div *ngIf="!showConteudo" class="box-conteudo map-frame">
-            <h1>   {{ titulo }} </h1>
+            <h4>   {{ titulo }} </h4>
           <iframe class="col" width="700" height="500" scrolling="no" frameborder="no" [src]=" this.mapUrl | safe"></iframe>
         <button value="Voltar"></button>
 

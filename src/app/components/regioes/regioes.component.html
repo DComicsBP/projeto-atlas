@@ -10,6 +10,7 @@
           </a>
         </div>
 
+
         <div *ngIf="showConteudo" class="box-conteudo">
 
           <div class="titulo">
@@ -20,15 +21,17 @@
               {{ regiao.desc }}
             </p>
           </div>
+        
         </div>
-
+        
         
        {{legenda}}
-
+      
         <div *ngIf="!showConteudo" class="box-conteudo map-frame">
             <h5>   {{ titulo }} </h5>
           <iframe class="col" width="700" height="500" scrolling="no" frameborder="no" [src]=" this.mapUrl | safe"></iframe>
-        <button value="Voltar"></button>
-
+       
+        <app-legenda style="position: relative; top:-400px; left: 750px;"> </app-legenda>
 
         </div>
+      

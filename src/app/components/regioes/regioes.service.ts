@@ -1,3 +1,4 @@
+import { _Legenda } from './../legenda/legenda';
 import { _Descricao } from './descricao';
 import { Injectable } from '@angular/core';
 
@@ -12,6 +13,8 @@ export class RegioesService {
 
   tipoMapa:any[] = [_MapasMortalidade, _MapasDemografia, _MapasAdministrativos, _MapasSaudeAmbiental, _MapasViolencia]
   descricao: any[] = _Descricao;
+  legenda: any[] = _Legenda;
+
 
   private _regioes = [
     { id: 1,

@@ -19,7 +19,6 @@ export class RegioesComponent implements OnInit {
   legenda = null;
   // tslint:disable-next-line:max-line-length
 
-  private _url = 'http://fusiontables.google.com/';
 
   constructor(private _RegioesService: RegioesService,
               private _activatedRoute: ActivatedRoute,
@@ -35,15 +34,11 @@ export class RegioesComponent implements OnInit {
     });
 
   }
-
   
-  showMap(link, titulo, legenda) {
+  showMap(link, titulo) {
     this.showConteudo = false;
-    // this.mapUrl = this._url + link;
-    this.legenda = legenda;
     this.titulo = titulo;
     this.mapUrl = link;
-    // mapa = this._url;
     console.log(this.mapUrl);
     }
 

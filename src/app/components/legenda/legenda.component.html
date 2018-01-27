@@ -1,10 +1,12 @@
 <div *ngFor="let legenda of var01; let i = index" >
+                <div *ngFor="let c of legenda.leg; let j = index" >
             
-  <div class="{{var01[i].var01}}">
-          {{ legenda }}
+  <div class="{{c}}">
+          {{ c }}
           <div class="conteudo">
-                  {{ var02[i] }}
+                  {{ legenda.title }}
           </div>
   </div>
    
   </div>
+</div>

@@ -7,7 +7,10 @@ const mapUrl = null;
 @Component({
   selector: 'app-regioes',
   templateUrl: './regioes.component.html',
-  styleUrls: ['./regioes.component.css'],
+  styleUrls: [
+    './regioes.component.css',
+     './legenda.css.css' 
+],
 
   providers: [RegioesService]
 })
@@ -16,13 +19,14 @@ export class RegioesComponent implements OnInit {
   regiao = null;
   mapUrl = null;
   titulo = null;
-  legenda = null;
-  // tslint:disable-next-line:max-line-length
+  legenda = _Legenda;
 
 
   constructor(private _RegioesService: RegioesService,
               private _activatedRoute: ActivatedRoute,
-             ) {}
+             ) {
+
+             }
 
   ngOnInit() {
     console.log(this._activatedRoute);
@@ -30,12 +34,12 @@ export class RegioesComponent implements OnInit {
       console.log('Router value => ', data);
       const routerId = Number(data.id);
       this._get(routerId);
-
+      console.log('Teste da legenda = >' + this.legenda); 
     });
 
   }
   
-  showMap(link, titulo) {
+  showMap(link, titulo,legenda) {
     this.showConteudo = false;
     this.titulo = titulo;
     this.mapUrl = link;
@@ -53,6 +57,7 @@ export class RegioesComponent implements OnInit {
 
 import { Pipe, PipeTransform } from '@angular/core';
 import { DomSanitizer} from '@angular/platform-browser';
+import { _Legenda } from './legenda';
 
 @Pipe({ name: 'safe' })
 

@@ -8,7 +8,6 @@ import { MaterialApoioComponent } from './material-apoio/material-apoio.componen
 import { MetodologiaComponent } from './metodologia/metodologia.component';
 import { ProjetoComponent } from './projeto/projeto.component';
 import { EquipeComponent } from './equipe/equipe.component';
-import { LegendaComponent } from './legenda/legenda.component';
 
 
 // rotas, servicos e modulos
@@ -37,7 +36,6 @@ const appRouters: Routes = [
     MaterialApoioComponent,
     RegioesComponent,
     SafePipe,
-    LegendaComponent
   ],
   imports: [
     RouterModule.forRoot(appRouters),

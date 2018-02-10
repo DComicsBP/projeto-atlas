@@ -5,7 +5,7 @@
       <div class="col-3">
 
         <div class="list-group">
-          <a *ngFor="let map of regiao.maps; let i = index" routerLink="['mapas'], id" class="list-group-item " (click)="showMap(map.link, map.titulo, map.legenda)">
+          <a *ngFor="let map of regiao.maps; let i = index" routerLink="['mapas'], id" class="list-group-item " (click)="showMap(map.link, map.titulo, map.leg)">
             <h5 class="list-group-item-heading">{{ map.nome }}</h5>
           </a>
         </div>
@@ -13,9 +13,10 @@
 
         <div *ngIf="showConteudo" class="box-conteudo">
 
-          <div class="titulo">
+          <div class="titulo"> 
             <h3>{{ regiao.regiao }}</h3>
           </div>
+          
           <div class="box-texto">
             <p>
               {{ regiao.desc }}
@@ -25,13 +26,16 @@
         </div>
         
         
-       {{legenda}}
+     
       
         <div *ngIf="!showConteudo" class="box-conteudo map-frame">
             <h5>   {{ titulo }} </h5>
           <iframe class="col" width="700" height="500" scrolling="no" frameborder="no" [src]=" this.mapUrl | safe"></iframe>
-       
-        <app-legenda style="position: relative; top:-400px; left: 700px;"> </app-legenda>
+          <div *ngFor="let legenda of legenda.leg">
+            <div class="{{legenda}}"></div>
+          </div>
+          
+
+          </div>
             
-        </div>
-      
+     

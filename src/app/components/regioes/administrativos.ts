@@ -1,3 +1,4 @@
+/* tslint:disable */
 export let _MapasAdministrativos: any[] = [
     {
       titulo:'Regiões de Saúde',

@@ -1,3 +1,5 @@
+/* tslint:disable */
+
 export let _MapasDemografia: any[] = [
     {
       titulo:'Titulo 01',

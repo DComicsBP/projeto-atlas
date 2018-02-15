@@ -1,4 +1,4 @@
-
+/*tslint:disable*/
 import { Component, OnInit } from '@angular/core';
 import { RegioesService } from './regioes.service';
 import { ActivatedRoute } from '@angular/router';
@@ -19,7 +19,6 @@ export class RegioesComponent implements OnInit {
   regiao = null;
   mapUrl = null;
   titulo = null;
-  legenda = _Legenda;
 
 
   constructor(private _RegioesService: RegioesService,
@@ -34,7 +33,6 @@ export class RegioesComponent implements OnInit {
       console.log('Router value => ', data);
       const routerId = Number(data.id);
       this._get(routerId);
-      console.log('Teste da legenda = >' + this.legenda); 
     });
 
   }

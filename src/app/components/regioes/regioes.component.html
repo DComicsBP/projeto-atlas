@@ -32,9 +32,9 @@
           <iframe class="col" width="700" height="500" scrolling="no" frameborder="no" [src]=" this.mapUrl | safe"></iframe>
           
           <div style="position:relative; top: -500px; left: 700px;">
-            <div style="width:100px; height:20px" *ngFor="let legenda of regiao.legend.leg">
-              <div class="{{legenda}}"></div>
-              <span  style="position: relative; left: 40px; top:-30px">Rafael</span>
-            </div>
+              <div style="width:100px; height:20px" *ngFor="let legenda of regiao.legend.leg; let descricao of regiao.legend.title">
+                <div class="{{legenda}}"></div>
+                <span  style="position: relative; left: 40px; top:-30px">{{ descricao }}</span>
+              </div>
           </div>
         </div>

@@ -1,3 +1,4 @@
+/* tslint:disable */
 export let _MapasViolencia: any[] = [
     {
       titulo:'Titulo 01',

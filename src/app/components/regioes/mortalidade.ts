@@ -1,7 +1,8 @@
-    export let _MapasMortalidade: any[] = [{
-                titulo:'Óbitos Infantis - RS',
-                nome:'Óbitos Infantis - RS ',
-                link:'https://fusiontables.google.com/embedviz?q=select+col26+from+1ZAxGejRZuKEiVSf5McmWMdPtlqceQmNGIviUHDHb&viz=MAP&h=false&lat=-30.39595413228537&lng=-52.99139537500001&t=1&z=6&l=col26&y=2&tmplt=3&hml=KML'
+   /* tslint:disable */
+   export let _MapasMortalidade: any[] = [{
+                titulo: 'Óbitos Infantis - RS',
+                nome: 'Óbitos Infantis - RS ',
+                link: 'https://fusiontables.google.com/embedviz?q=select+col26+from+1ZAxGejRZuKEiVSf5McmWMdPtlqceQmNGIviUHDHb&viz=MAP&h=false&lat=-30.39595413228537&lng=-52.99139537500001&t=1&z=6&l=col26&y=2&tmplt=3&hml=KML'
               },
               {
                 titulo:'Óbitos Infantis - Indígena',

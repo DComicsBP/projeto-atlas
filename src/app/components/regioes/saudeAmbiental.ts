@@ -1,3 +1,4 @@
+/* tslint:disable */
 export let _MapasSaudeAmbiental: any[] = [
     {
       titulo:'Biomas do Rio Grande do Sul',

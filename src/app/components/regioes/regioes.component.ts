@@ -1,3 +1,4 @@
+import { _Legenda } from './legenda';
 /*tslint:disable*/
 import { Component, OnInit } from '@angular/core';
 import { RegioesService } from './regioes.service';
@@ -33,6 +34,9 @@ export class RegioesComponent implements OnInit {
       console.log('Router value => ', data);
       const routerId = Number(data.id);
       this._get(routerId);
+
+      
+
     });
 
   }
@@ -55,7 +59,6 @@ export class RegioesComponent implements OnInit {
 
 import { Pipe, PipeTransform } from '@angular/core';
 import { DomSanitizer} from '@angular/platform-browser';
-import { _Legenda } from './legenda';
 
 @Pipe({ name: 'safe' })
 

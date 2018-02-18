@@ -30,11 +30,38 @@
         <div *ngIf="!showConteudo" class="box-conteudo map-frame">
           <h5> {{ titulo }} </h5>
           <iframe class="col" width="700" height="500" scrolling="no" frameborder="no" [src]=" this.mapUrl | safe"></iframe>
-          
-          <div style="position:relative; top: -500px; left: 700px;">
-              <div style="width:100px; height:20px" *ngFor="let legenda of regiao.legend.leg; let descricao of regiao.legend.title">
-                <div class="{{legenda}}"></div>
-                <span  style="position: relative; left: 40px; top:-30px">{{ descricao }}</span>
+
+
+          <div class="legenda">
+        
+
+          <div *ngFor="let cor of regiao.legend.leg "  style="position:relative; top: -550px; left: 700px;">
+              <div class="{{cor}}">
+
               </div>
           </div>
+          <h5  style="position:relative; top: -750px; left: 750px; height: 30px;">Legenda </h5>
+          <div *ngFor="let legenda of regiao.legend.titulo; let cor of regiao.legend.leg " style="position:relative; top: -740px; left: 750px; height: 30px;">
+            {{legenda}}
+
+          </div>
         </div>
+          
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!--div *ngFor="let legenda of regiao.legend.title; let i = index">
+    {{desc}}
+  </div>
+  <div style="position:relative; top: -500px; left: 700px;">
+    <div style="width:100px; height:20px" *ngFor="let legenda of regiao.legend.leg; let d of regiao.legend.titulo">
+      <div class="{{legenda}}"></div>
+      <span style="position: relative; left: 40px; top:-30px">{{ d }}</span>
+    </div>
+  </div-->

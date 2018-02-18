@@ -3,15 +3,11 @@
 export let _Legenda: any[] = [
         {
             id: 1,
-            title:['Legenda','Legenda','Legenda','Legenda','Legenda','Legenda',],
-            leg: ['leg3 ','leg1','leg2'],
+            titulo:['0,0 - 2,2','2,2 - 140,2','140,3 - 533,1','533,2 - 1166,4','1166,5 - 2.918,9'],
+          
+            leg: ['leg1 ','leg2','leg3','leg4','leg5' ],
             
-        }, 
-        {
-            id:2,
-            title:'Legenda 02',
-            leg: ['leg1','leg1','leg2','leg4','leg5','leg6','leg7'],
-        },
+       
+        } 
      
-
 ]; 

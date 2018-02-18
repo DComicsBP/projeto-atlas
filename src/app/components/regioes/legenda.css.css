@@ -1,8 +1,14 @@
+.legenda{
+    position: relative;
+    top: 200px; 
+}
 .leg1{
     margin: 10px;
     width: 20px;
     height: 20px;
-    background-color: palevioletred
+    border: 1px solid;
+    border-color: grey;
+    background-color:#ffffff;
 
 }
 
@@ -10,7 +16,7 @@
     margin: 10px;
     width: 20px;
     height: 20px;
-    background-color: brown
+    background-color: #ffe599;
 
 }
 
@@ -18,7 +24,7 @@
     margin: 10px;
     width: 20px;
     height: 20px;
-    background-color: blue;
+    background-color: #ffd966;
 }
 
 
@@ -26,14 +32,14 @@
     margin: 10px;
     width: 20px;
     height: 20px;
-    background-color: red; 
+    background-color:#f1C232; 
 }
 
 .leg5{
     margin: 10px;   
     width: 20px;
     height: 20px;
-    background-color:peru; 
+    background-color: #7f6000; 
 }
 
 .leg6{

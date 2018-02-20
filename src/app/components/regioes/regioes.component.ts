@@ -1,5 +1,6 @@
-import { _Legenda } from './legenda';
 /*tslint:disable*/
+import { _Legenda } from './legenda';
+
 import { Component, OnInit } from '@angular/core';
 import { RegioesService } from './regioes.service';
 import { ActivatedRoute } from '@angular/router';
@@ -20,7 +21,8 @@ export class RegioesComponent implements OnInit {
   regiao = null;
   mapUrl = null;
   titulo = null;
-
+  Ltitulo = null; 
+  leg = null; 
 
   constructor(private _RegioesService: RegioesService,
               private _activatedRoute: ActivatedRoute,
@@ -41,11 +43,16 @@ export class RegioesComponent implements OnInit {
 
   }
   
-  showMap(link, titulo,legenda) {
+  showMap(link, titulo,ltitulo,leg) {
     this.showConteudo = false;
     this.titulo = titulo;
     this.mapUrl = link;
-    console.log(this.mapUrl);
+    this.Ltitulo = ltitulo;
+    this.leg = leg;  
+    console.log(this.titulo);
+    console.log(this.leg);
+    console.log(this.Ltitulo);
+    
     }
 
   private _get(routerId) {

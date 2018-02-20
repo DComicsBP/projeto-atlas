@@ -4,7 +4,7 @@
       <div class="col-3">
 
         <div class="list-group">
-          <a *ngFor="let map of regiao.maps; let i = index" routerLink="['mapas'], id" class="list-group-item " (click)="showMap(map.link, map.titulo, map.leg)">
+          <a *ngFor="let map of regiao.maps; let i = index" routerLink="['mapas'], id" class="list-group-item " (click)="showMap(map.link, map.titulo, map.Ltitulo, map.leg)">
             <h5 class="list-group-item-heading">{{ map.nome }}</h5>
           </a>
         </div>
@@ -35,14 +35,15 @@
           <div class="legenda">
         
 
-          <div *ngFor="let cor of regiao.legend.leg "  style="position:relative; top: -550px; left: 700px;">
-              <div class="{{cor}}">
+          <div style="position:relative; top: -550px; left: 700px;" *ngFor="let cor of this.leg; let i = index">
+              <div class="{{this.leg[i]}}">
 
               </div>
           </div>
           <h5  style="position:relative; top: -750px; left: 750px; height: 30px;">Legenda </h5>
-          <div *ngFor="let legenda of regiao.legend.titulo; let cor of regiao.legend.leg " style="position:relative; top: -740px; left: 750px; height: 30px;">
-            {{legenda}}
+          <div style="position:relative; top: -740px; left: 750px; height: 30px;" *ngFor="let titulo of this.Ltitulo; let i = index">
+      
+            {{this.Ltitulo[i]}}
 
           </div>
         </div>

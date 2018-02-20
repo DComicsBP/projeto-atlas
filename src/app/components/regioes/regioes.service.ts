@@ -26,13 +26,13 @@ export class RegioesService {
       regiao: 'Demografia',
       desc: this.descricao[0],
       maps: this.tipoMapa[1],
-     legend: this.legenda[0]
+      
     },
     { id: 2,
       regiao: 'Administrativos',
       desc: this.descricao[1],
       maps: this.tipoMapa[2], 
-    legend: this.legenda[0]
+    legend: this.legenda[1]
     },
     { id: 3,
       regiao: 'Violência',

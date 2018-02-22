@@ -1,11 +1,12 @@
+
 <div class="menu-lateral" *ngIf="regiao">
   <div class="container-options">
     <div class="container-fluid">
       <div class="col-3">
 
-        <div class="list-group">
+        <div class="list-group-flush ">
           <a *ngFor="let map of regiao.maps; let i = index" routerLink="['mapas'], id" class="list-group-item " (click)="showMap(map.link, map.titulo, map.Ltitulo, map.leg)">
-            <h5 class="list-group-item-heading">{{ map.nome }}</h5>
+            {{ map.nome }}
           </a>
         </div>
 

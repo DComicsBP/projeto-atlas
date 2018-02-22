@@ -2,6 +2,16 @@
     position: relative;
     top: 200px; 
 }
+.branco{
+    margin: 10px;
+    width: 20px;
+    height: 20px;
+    background-color:white;
+
+}
+/*
+Densidade Demográfica do Rio Grande do Sul, 2010 (hab/km2)
+*/
 .leg1{
     margin: 10px;
     width: 20px;
@@ -42,15 +52,75 @@
     background-color: #7f6000; 
 }
 
+/*
+Taxa de População Raça/Cor - Branca
+*/
 .leg6{
     margin: 10px;
     width: 20px;
     height: 20px;
-    background-color: aquamarine;
+    background-color: #d9ead3;
 }
 
 
 .leg7{
+    margin: 10px;
+    width: 20px;
+    height: 20px;
+    background-color: #93c47d;
+}
+
+
+.leg8{
+    margin: 10px;
+    width: 20px;
+    height: 20px;
+    background-color: #38761d;
+}
+
+
+.leg9{
+    margin: 10px;
+    width: 20px;
+    height: 20px;
+    background-color:#274e13;
+}
+
+/*
+Taxa de População Raça/Cor - preta
+Taxa de População Raça/Cor - Parda
+Taxa de População Raça/Cor - Indigena
+Taxa de População Raça/Cor - Amarela
+*/
+
+.leg10{
+    margin: 10px;
+    width: 20px;
+    height: 20px;
+    background-color:#cccccc;
+}
+
+
+
+.leg11{
+    margin: 10px;
+    width: 20px;
+    height: 20px;
+    background-color: #ffd966;
+}
+
+
+
+.leg12{
+    margin: 10px;
+    width: 20px;
+    height: 20px;
+    background-color: #bf9000;
+}
+
+
+
+.leg13{
     margin: 10px;
     width: 20px;
     height: 20px;

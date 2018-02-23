@@ -1,0 +1,10 @@
+O presente trabalho foi desenvolvido em processo de 
+experimentação com a finalidade de servir como um atlas
+multiescalar sobre vulnerabilidade ambiental do estado do 
+Rio Grande do Sul. Foi desenvolvido com o subsídio da 
+CAPES/ PROBIC. 
+
+1. Observações sobre a versão: 
+
+Essa primeira versão é uma Web Application de cunho experimental 
+com a finalidade de ser um esboço do 

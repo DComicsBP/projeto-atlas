@@ -1,5 +1,4 @@
 /*tslint:disable*/
-import { _Legenda } from './legenda';
 
 import { Component, OnInit } from '@angular/core';
 import { RegioesService } from './regioes.service';
@@ -11,7 +10,13 @@ const mapUrl = null;
   templateUrl: './regioes.component.html',
   styleUrls: [
     './regioes.component.css',
-     './legenda.css.css' 
+     './css/legenda.css.css',
+     './css/demografia.css',
+     './css/saudeAmbiental.css', 
+      './css/violencia.css',
+      './css/demografia.css',
+      './css/saudeAmbiental.css'
+
 ],
 
   providers: [RegioesService]

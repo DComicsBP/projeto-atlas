@@ -2,13 +2,12 @@
 
 import { Injectable } from '@angular/core';
 
-import { _Legenda } from './legenda';
-import { _Descricao } from './descricao';
-import { _MapasSaudeAmbiental } from './saudeAmbiental';
-import { _MapasAdministrativos } from './administrativos';
-import { _MapasDemografia } from './demografia';
-import { _MapasMortalidade } from './mortalidade';
-import { _MapasViolencia } from './violencia';
+import { _Descricao } from './ts/tipos-mapas/descricao';
+import { _MapasSaudeAmbiental } from './ts/tipos-mapas/saudeAmbiental';
+import { _MapasAdministrativos } from './ts/tipos-mapas/administrativos';
+import { _MapasDemografia } from './ts/tipos-mapas/demografia';
+import { _MapasMortalidade } from './ts/tipos-mapas/mortalidade';
+import { _MapasViolencia } from './ts/tipos-mapas/violencia';
 
 @Injectable()
 export class RegioesService {

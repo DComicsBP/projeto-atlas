@@ -5,10 +5,8 @@
       <div class="col-3">
           <br>
           <br>
-          <br>
-          <br>
           
-        <div class="list-group-flush col-12">
+        <div class="list-group" style="font-size: 12px;">
           
           <a *ngFor="let map of regiao.maps; let i = index" routerLink="['mapas'], id" class="list-group-item " (click)="showMap(map.link, map.titulo, map.Ltitulo, map.leg)">
           
@@ -33,7 +31,12 @@
 
 
         <div *ngIf="!showConteudo" class="box-conteudo map-frame">
+          <br>
+          <br>
+          <br>
           <h5> {{ titulo }} </h5>
+          
+
           <iframe  width="700" height="500" scrolling="no" frameborder="no" [src]=" this.mapUrl | safe"></iframe>
 
 
@@ -45,13 +48,13 @@
 
               </div>
           </div>
-          <h5  style="position:relative; top: -750px; left: 750px; height: 30px;">Legenda </h5>
-          <div style="position:relative; top: -740px; left: 750px; height: 30px;" *ngFor="let titulo of this.Ltitulo; let i = index">
-      
-            {{this.Ltitulo[i]}}
+            <h5  style="position:relative; top: -750px; left: 750px; height: 30px;">Legenda </h5>
+            <div style="position:relative; top: -740px; left: 750px; height: 30px;" *ngFor="let titulo of this.Ltitulo; let i = index">
+        
+              {{this.Ltitulo[i]}}
 
 
-          </div>
+            </div>
         </div>
           
 

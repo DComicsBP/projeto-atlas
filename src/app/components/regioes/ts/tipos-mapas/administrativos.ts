@@ -3,17 +3,10 @@ export let _MapasAdministrativos: any[] = [
     {
       titulo:'Regiões de Saúde',
       nome:'Regiões de Saúde',
-      link:'https://fusiontables.google.com/embedviz?q=select+col26+from+1ZAxGejRZuKEiVSf5McmWMdPtlqceQmNGIviUHDHb&viz=MAP&h=false&lat=-30.67934390062796&lng=-52.59588756250001&t=1&z=6&l=col26&y=10&tmplt=11&hml=KML'
+      link:'https://fusiontables.google.com/embedviz?q=select+col26+from+1ZAxGejRZuKEiVSf5McmWMdPtlqceQmNGIviUHDHb&viz=MAP&h=false&lat=-30.67934390062796&lng=-52.59588756250001&t=1&z=6&l=col26&y=10&tmplt=11&hml=KML',
+      Ltitulo:['0,0 - 6,143','6.144 - 12.286','12.287 - 18.429','18.430 -   24.571','  24.572 - 30.714', '30.715 - 36.857', '36.858 - 43.0'],
+      leg: ['leg14 ','leg15','leg16','leg17','leg18','leg19','leg20'],
+
     },
-    {
-      titulo:'Titulo 02',
-      nome:'Mapa 02',
-      link:'https://fusiontables.google.com/embedviz?q=select+col22+from+1IcoXZ7XHA4uhvqXAP9n3fjjsN6eJ1uWfOIH3Xgc3&viz=MAP&h=false&lat=-30.191385705216614&lng=-50.62162998193355&t=1&z=8&l=col22&y=2&tmplt=2&hml=KML'
-    },
-    {
-      titulo:'Titulo 03',
-      nome:'Mapa 02',
-      link:'https://fusiontables.google.com/embedviz?q=select+col22+from+1IcoXZ7XHA4uhvqXAP9n3fjjsN6eJ1uWfOIH3Xgc3&viz=MAP&h=false&lat=-30.191385705216614&lng=-50.62162998193355&t=1&z=8&l=col22&y=2&tmplt=2&hml=KML'
-    }
 
 ]; 

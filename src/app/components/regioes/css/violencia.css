@@ -11,6 +11,12 @@ Quantidade de Casos de Violência Feminina
     background-color: #f4cccc;
 }
 
+.leg31{
+    margin: 10px;
+    width: 20px;
+    height: 20px;
+    background-color: #cccccc;
+}
 
 .leg32{
     margin: 10px;
@@ -72,4 +78,168 @@ Quantidade de Casos de Violência Feminina
     width: 20px;
     height: 20px;
     background-color:#274e13;
+}
+
+/*
+Casos de Trabalho Infantil
+Casos de Tortura
+ leg: ['leg10 ','leg11','leg12','branco','branco'],
+
+*/
+
+/*
+Violencia sexual 
+Taxa de Casos de Violência Econômica
+Quantidade de Casos de Violência Física Masculina
+
+*/
+
+.leg41{
+    margin: 10px;
+    width: 20px;
+    height: 20px;
+    background-color: #cccccc;
+}
+
+.leg42{
+    margin: 10px;
+    width: 20px;
+    height: 20px;
+    background-color: #f6b26b;
+}
+.leg43{
+    margin: 10px;
+    width: 20px;
+    height: 20px;
+    background-color:#bf9000;
+}
+.leg44{
+    margin: 10px;
+    width: 20px;
+    height: 20px;
+    background-color: #9900ff;
+}
+.leg45{
+    margin: 10px;
+    width: 20px;
+    height: 20px;
+    background-color: #a64d79;
+}
+.leg46{
+    margin: 10px;
+    width: 20px;
+    height: 20px;
+    background-color:#ff00ff;
+}
+.leg47{
+    margin: 10px;
+    width: 20px;
+    height: 20px;
+    background-color:#ea9999;
+}
+/*
+Violência Negligência Abandono 
+Lesão Auto-Provocada
+
+*/
+.leg49{
+    margin: 10px;
+    width: 20px;
+    height: 20px;
+    background-color: #cccccc;
+}
+.leg50{
+    margin: 10px;
+    width: 20px;
+    height: 20px;
+    background-color: #ff9900;
+}
+.leg51{
+    margin: 10px;
+    width: 20px;
+    height: 20px;
+    background-color:#ffff00;
+}
+.leg52{
+    margin: 10px;
+    width: 20px;
+    height: 20px;
+    background-color:#00ff00;
+}
+.leg53{
+    margin: 10px;
+    width: 20px;
+    height: 20px;
+    background-color:#9900ff;
+}
+
+.leg54{
+    margin: 10px;
+    width: 20px;
+    height: 20px;
+    background-color:#c27ba0;
+}
+.leg55{
+    margin: 10px;
+    width: 20px;
+    height: 20px;
+    background-color:#674ea7;
+}
+.leg56{
+    margin: 10px;
+    width: 20px;
+    height: 20px;
+    background-color:#6aa84f;
+}
+.leg57{
+    margin: 10px;
+    width: 20px;
+    height: 20px;
+    background-color:#f1c232;
+}
+.leg58{
+    margin: 10px;
+    width: 20px;
+    height: 20px;
+    background-color:#e69138;
+}
+.leg59{
+    margin: 10px;
+    width: 20px;
+    height: 20px;
+    background-color:#cc0000;
+}
+.leg60{
+    margin: 10px;
+    width: 20px;
+    height: 20px;
+    background-color:#660000;
+}
+.leg61{
+    margin: 10px;
+    width: 20px;
+    height: 20px;
+    background-color:#783f04;
+}
+.leg62{
+    margin: 10px;
+    width: 20px;
+    height: 20px;
+    background-color:#7f6000;
+}
+/*
+tráfico de seres humanos 
+*/
+.leg63{
+    margin: 10px;
+    width: 20px;
+    height: 20px;
+    background-color:#e0ffd4;
+}
+
+.leg64{
+    margin: 10px;
+    width: 20px;
+    height: 20px;
+    background-color:#267114;
 }

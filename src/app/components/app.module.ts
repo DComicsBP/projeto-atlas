@@ -1,3 +1,4 @@
+import { MaterialApoioService } from './material-apoio/material-apoio.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
@@ -18,13 +19,12 @@ import { RegioesComponent, SafePipe } from './regioes/regioes.component';
 const appRouters: Routes = [
     { path: '', component: ProjetoComponent },
     { path: 'projeto', component: ProjetoComponent },
-    { path: 'material', component: MaterialApoioComponent },
     { path: 'equipe', component: EquipeComponent },
     { path: 'metodologia', component: MetodologiaComponent },
+    { path: 'material/', component: MaterialApoioComponent },
+    { path: 'material/:id', component: MaterialApoioComponent },
     { path: 'regioes/:id', component: RegioesComponent }
 ];
-
-
 
 @NgModule({
   declarations: [
@@ -45,7 +45,7 @@ const appRouters: Routes = [
     exports: [
       RouterModule
     ],
-    providers: [],
+    providers: [MaterialApoioService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

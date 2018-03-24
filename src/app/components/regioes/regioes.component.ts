@@ -1,21 +1,29 @@
 /*tslint:disable*/
 
-import { Component, OnInit } from '@angular/core'; import { RegioesService } from './regioes.service'; 
+import { Component, OnInit } from '@angular/core'; import { RegioesService } from './regioes.service';
 import { ActivatedRoute } from '@angular/router';
 const mapUrl = null;
 @Component({
   selector: 'app-regioes',
   templateUrl: './regioes.component.html',
   styleUrls: [
-    './regioes.component.css', './css/legenda.css.css', './css/demografia.css', './css/saudeAmbiental.css',
-    './css/violencia.css', './css/demografia.css', './css/saudeAmbiental.css',  './css/mortalidade.css'
+            './regioes.component.css', 
+            './css/legenda.css.css', 
+            './css/demografia.css', 
+            './css/saudeAmbiental.css',
+            './css/violencia.css', 
+            './css/demografia.css', 
+            './css/saudeAmbiental.css', 
+            './css/mortalidade.css'
 
-  ],
+          ],
   providers: [RegioesService]
 })
 export class RegioesComponent implements OnInit {
+cursos = [`da`,`di`,`de`];
+
   showConteudo = true;
-  regiao = null; mapUrl = null; titulo = null; Ltitulo = null; leg = null; 
+  regiao = null; mapUrl = null; titulo = null; Ltitulo = null; leg = null;
 
   constructor(private _RegioesService: RegioesService,
     private _activatedRoute: ActivatedRoute,
@@ -27,7 +35,7 @@ export class RegioesComponent implements OnInit {
       console.log('Router value => ', data);
       const routerId = Number(data.id);
       this._get(routerId);
-   });
+    });
 
   }
 

@@ -1,11 +1,12 @@
+import { MaterialAopioModule } from './material-apoio/material-apoio.module';
 import { MaterialApoioService } from './material-apoio/material-apoio.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
 
+
 // import dos componentes das rotas principais
-import { MaterialApoioComponent } from './material-apoio/material-apoio.component';
 import { MetodologiaComponent } from './metodologia/metodologia.component';
 import { ProjetoComponent } from './projeto/projeto.component';
 import { EquipeComponent } from './equipe/equipe.component';
@@ -15,6 +16,8 @@ import { EquipeComponent } from './equipe/equipe.component';
 
 import { ModuleWithProviders } from '@angular/core';
 import { RegioesComponent, SafePipe } from './regioes/regioes.component';
+import { MaterialApoioComponent } from './material-apoio/material-apoio.component';
+import { CommonModule } from '@angular/common';
 
 const appRouters: Routes = [
     { path: '', component: ProjetoComponent },
@@ -22,24 +25,24 @@ const appRouters: Routes = [
     { path: 'equipe', component: EquipeComponent },
     { path: 'metodologia', component: MetodologiaComponent },
     { path: 'material/', component: MaterialApoioComponent },
-    { path: 'material/:id', component: MaterialApoioComponent },
+     { path: 'material/:id', component: MaterialApoioComponent },
     { path: 'regioes/:id', component: RegioesComponent }
 ];
 
 @NgModule({
   declarations: [
-
     AppComponent,
     EquipeComponent,
     ProjetoComponent,
     MetodologiaComponent,
-    MaterialApoioComponent,
     RegioesComponent,
     SafePipe,
-  ],
+    ],
   imports: [
     RouterModule.forRoot(appRouters),
-     BrowserModule
+     BrowserModule,
+     CommonModule,
+     MaterialAopioModule
 
     ],
     exports: [

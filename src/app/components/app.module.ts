@@ -10,13 +10,14 @@ import { AppComponent } from './app.component';
 import { MetodologiaComponent } from './metodologia/metodologia.component';
 import { ProjetoComponent } from './projeto/projeto.component';
 import { EquipeComponent } from './equipe/equipe.component';
+import { LegendasComponent } from './legendas/legendas.component';
+import { MaterialApoioComponent } from './material-apoio/material-apoio.component';
 
 
 // rotas, servicos e modulos
 
 import { ModuleWithProviders } from '@angular/core';
 import { RegioesComponent, SafePipe } from './regioes/regioes.component';
-import { MaterialApoioComponent } from './material-apoio/material-apoio.component';
 import { CommonModule } from '@angular/common';
 
 const appRouters: Routes = [
@@ -37,6 +38,7 @@ const appRouters: Routes = [
     MetodologiaComponent,
     RegioesComponent,
     SafePipe,
+    LegendasComponent,
     ],
   imports: [
     RouterModule.forRoot(appRouters),

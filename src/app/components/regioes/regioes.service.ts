@@ -17,27 +17,39 @@ export class RegioesService {
  
   private _regioes = [
     { id: 1,
-      regiao: 'Demografia', desc: this.descricao[0], maps: this.tipoMapa[1],    
+      regiao: 'Demografia', 
+      desc: this.descricao[0], 
+      maps: this.tipoMapa[1],    
     },
     { id: 2,
-      regiao: 'Administrativos', desc: this.descricao[1], maps: this.tipoMapa[2], 
+      regiao: 'Administrativos', 
+      desc: this.descricao[1], 
+      maps: this.tipoMapa[2], 
    
     },
     { id: 3,
-      regiao: 'Violência', desc: this.descricao[2], maps: this.tipoMapa[4],
+      regiao: 'Violência', 
+      desc: this.descricao[2], 
+      maps: this.tipoMapa[4],
      },
     { id: 4,
-      regiao: 'Mortalidade', desc: this.descricao[3], maps: this.tipoMapa[0],
+      regiao: 'Mortalidade', 
+      desc: this.descricao[3], 
+      maps: this.tipoMapa[0],
     },
 
     { id: 5,
-      regiao: 'Saúde Ambiental', desc: this.descricao[4], maps: this.tipoMapa[3],
+      regiao: 'Saúde Ambiental', 
+      desc: this.descricao[4],
+      maps: this.tipoMapa[3],
     }
   ];
   constructor() {}
   getRegioes() { return this._regioes; }
   
-  getRegiao(regiaoId) { return this._regioes.find(regiao => regiaoId === regiao.id ); }
+  getRegiao(regiaoId) { 
+    return this._regioes.find(regiao => regiaoId === regiao.id ); 
+  }
 
   }
 

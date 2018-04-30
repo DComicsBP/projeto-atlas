@@ -24,7 +24,7 @@ cursos: any[];
   });
 }
 // tslint:disable-next-line:member-ordering
-curso: any [];
+curso: any;
   private _get(routerId) {
     this.curso = this._materialApoioService.getCurso(routerId);
     console.log(`vamos ver se sai o cursos que eu preciso ==> ` + routerId);

@@ -7,7 +7,7 @@
 
         <div class="list-group" style="font-size: 12px;">
 
-          <a *ngFor="let map of regiao.maps; let i = index" routerLink="['mapas'], id" class="list-group-item " (click)="showMap(map.link, map.titulo, map.Ltitulo, map.leg)">
+          <a *ngFor="let map of regiao.maps; let i = index"  class="list-group-item " (click)="showMap(map.link, map.titulo, map.Ltitulo, map.leg)">
 
             {{ map.nome }}
           </a>
@@ -39,9 +39,7 @@
 
           <iframe width="700" height="500" scrolling="no" frameborder="no" [src]=" this.mapUrl | safe"></iframe>
 
-          <app-legendas></app-legendas>
-         
-
+      
 
         </div>
       </div>

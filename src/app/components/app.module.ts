@@ -10,7 +10,6 @@ import { AppComponent } from './app.component';
 import { MetodologiaComponent } from './metodologia/metodologia.component';
 import { ProjetoComponent } from './projeto/projeto.component';
 import { EquipeComponent } from './equipe/equipe.component';
-import { LegendasComponent } from './legendas/legendas.component';
 import { MaterialApoioComponent } from './material-apoio/material-apoio.component';
 
 
@@ -25,8 +24,7 @@ const appRouters: Routes = [
     { path: 'projeto', component: ProjetoComponent },
     { path: 'equipe', component: EquipeComponent },
     { path: 'metodologia', component: MetodologiaComponent },
-    { path: 'material/', component: MaterialApoioComponent },
-     { path: 'material/:id', component: MaterialApoioComponent },
+    { path: 'material/:id', component: MaterialApoioComponent },
     { path: 'regioes/:id', component: RegioesComponent }
 ];
 
@@ -37,8 +35,7 @@ const appRouters: Routes = [
     ProjetoComponent,
     MetodologiaComponent,
     RegioesComponent,
-    SafePipe,
-    LegendasComponent,
+    SafePipe
     ],
   imports: [
     RouterModule.forRoot(appRouters),

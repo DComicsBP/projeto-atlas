@@ -1,0 +1,26 @@
+.legenda{
+    position: relative;
+    top: 200px;
+   
+}
+.branco{
+    margin: 10px;
+    width: 20px;
+    height: 20px;
+    background-color:white;
+
+}
+
+
+.conteudo{
+    position: absolute;
+    top:-1px;
+    left: 45px;
+    
+}
+
+
+
+
+
+
